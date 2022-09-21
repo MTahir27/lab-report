@@ -23,15 +23,14 @@ include 'connection.php';
   </head>
   <body>
     <!--- NavBar --->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <!--- OffCanvas Trigger --->
+    <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+      <div class="container-fluid d-flex align-item-center justify-content-center">
         <button
-          class="navbar-toggler me-2"
+          class="me-2 d-lg-none bg-transparent border-0"
           type="button"
           data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasExample"
-          aria-controls="offcanvasExample"
+          data-bs-target="#sidebar"
+          aria-controls="sidebar"
         >
           <span
             class="navbar-toggler-icon"
@@ -39,40 +38,14 @@ include 'connection.php';
           >
           </span>
         </button>
-        <!--- OffCanvas Trigger --->
-        <a class="navbar-brand fw-bold me-auto" href="index.php"
+
+        <a class="navbar-brand fw-bold mx-auto ms-lg-0" href="index.php"
           >Lab Report Project</a
         >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <form class="d-flex ms-auto">
-            <div class="input-group my-3 my-lg-0">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Recipient's username"
-                aria-label="Recipient's username"
-                aria-describedby="button-addon2"
-              />
-              <button class="btn btn-primary" type="button" id="button-addon2">
-                <i class="bi bi-search"></i>
-              </button>
-            </div>
-          </form>
-          <ul class="navbar-nav mb-2 mb-lg-0">
+        <ul class="navbar-nav mb-0">
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -96,17 +69,16 @@ include 'connection.php';
               </ul>
             </li>
           </ul>
-        </div>
       </div>
     </nav>
     <!--- NavBar --->
 
-    <!-- - Off Canvas --->
+    <!-- Sidebar -->
     <div
       class="offcanvas offcanvas-start bg-dark text-white sidebar-nav"
       tabindex="-1"
-      id="offcanvasExample"
-      aria-labelledby="offcanvasExampleLabel"
+      id="sidebar"
+      aria-labelledby="sidebarLabel"
     >
       <div class="offcanvas-body pt-4 p-0">
         <nav class="navbar-dark">
@@ -128,15 +100,15 @@ include 'connection.php';
               <div class="text-muted small fw-bold px-3">REPORTS</div>
             </li>
             <li>
-              <a href="addReport.php" class="nav-link px-3 active">
-                <span class="me-2"> <i class="bi bi-plus-square"></i> </span>
-                <span> Add Report </span>
-              </a>
-            </li>
-            <li>
               <a href="allReports.php" class="nav-link px-3 active">
                 <span class="me-2"> <i class="bi bi-check2-square"></i> </span>
                 <span> All Reports </span>
+              </a>
+            </li>
+            <li>
+              <a href="addReport.php" class="nav-link px-3 active">
+                <span class="me-2"> <i class="bi bi-plus-square"></i> </span>
+                <span> Add Report </span>
               </a>
             </li>
             <li>
@@ -151,11 +123,11 @@ include 'connection.php';
                 <span> Delete Report </span>
               </a>
             </li>
-            <li class="my-4">
+            <!-- <li class="my-4">
               <hr class="dropdown-divider" />
-            </li>
+            </li> -->
 
-            <li>
+            <!-- <li>
               <div class="text-muted small fw-bold px-3">SETTING</div>
             </li>
             <li>
@@ -175,12 +147,12 @@ include 'connection.php';
                 <span class="me-2"> <i class="bi bi-geo-alt"></i> </span>
                 <span> Change Address </span>
               </a>
-            </li>
+            </li> -->
           </ul>
         </nav>
       </div>
     </div>
-    <!--- Off Canvas --->
+    <!--- Sidebar End --->
 
     <script src="js/script.js"></script>
     <script
