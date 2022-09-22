@@ -27,3 +27,9 @@
     height: calc(100% - var(--topNavbarHeigth));
   }
 }
+
+.medical-logo {
+  object-fit: cover;
+  object-position: center;
+  width: 200px;
+}
