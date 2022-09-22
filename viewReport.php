@@ -39,8 +39,6 @@
 
 ?>
 
-    <!--- Main Body --->
-
     <main class="container py-5">
       <section
         class="d-flex flex-column flex-md-row-reverse gap-5 align-items-center justify-content-between flex-wrap"

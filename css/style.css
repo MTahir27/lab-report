@@ -29,7 +29,23 @@
 }
 
 .medical-logo {
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
   object-position: center;
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
+}
+
+@media print {
+  @page {
+    margin: 0.5cm;
+  }
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .printBtn {
+    display: none;
+  }
 }
