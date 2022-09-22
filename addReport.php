@@ -145,6 +145,7 @@
                   type="checkbox"
                   name="checked"
                   id="gridCheck"
+                  value=""
                 />
                 <label class="form-check-label" for="gridCheck">
                   Confirmed
