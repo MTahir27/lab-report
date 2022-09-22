@@ -34,7 +34,7 @@
                             <th scope="col">Email</th>
                             <th scope="col">Phone</th>
                             <th scope="col">CNIC</th>
-                            <th scope="col" colspan="2" aligne="center">Actions</th>
+                            <th scope="col" colspan="2" class="text-center">Actions</th>
                             
                         </tr>
                     </thead>
