@@ -9,22 +9,18 @@ include 'connection.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lab Report</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+      href="./assets/fonts/fontawesome-6.2.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <!--- NavBar --->
     <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
-      <div class="container-fluid d-flex align-item-center justify-content-center">
+      <div
+        class="container-fluid d-flex align-item-center justify-content-center"
+      >
         <button
           class="me-2 d-lg-none bg-transparent border-0"
           type="button"
@@ -43,32 +39,32 @@ include 'connection.php';
           >Lab Report Project</a
         >
         <ul class="navbar-nav mb-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="true"
-              >
-                <i class="bi bi-person-circle"></i>
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="navbarDropdown"
-              >
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Hi
-                    <?php echo $_SESSION['username'] ?>
-                  </a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="logout.php">Logout</a></li>
-              </ul>
-            </li>
-          </ul>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="true"
+            >
+              <i class="fa-regular fa-circle-user fa-xl text-white"></i>
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="navbarDropdown"
+            >
+              <li>
+                <a class="dropdown-item" href="#">
+                  Hi
+                  <?php echo $_SESSION['username'] ?>
+                </a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </nav>
     <!--- NavBar --->
@@ -88,7 +84,7 @@ include 'connection.php';
             </li>
             <li>
               <a href="index.php" class="nav-link px-3 active">
-                <span class="me-2"> <i class="bi bi-speedometer2"></i> </span>
+                <i class="fa-solid fa-gauge me-2 fa-lg"></i>
                 <span> DashBoard </span>
               </a>
             </li>
@@ -101,25 +97,25 @@ include 'connection.php';
             </li>
             <li>
               <a href="allReports.php" class="nav-link px-3 active">
-                <span class="me-2"> <i class="bi bi-check2-square"></i> </span>
+                <i class="fa-regular fa-square-check me-2 fa-lg"></i>
                 <span> All Reports </span>
               </a>
             </li>
             <li>
               <a href="addReport.php" class="nav-link px-3 active">
-                <span class="me-2"> <i class="bi bi-plus-square"></i> </span>
+                <i class="fa-regular fa-square-plus me-2 fa-lg"></i>
                 <span> Add Report </span>
               </a>
             </li>
             <li>
               <a href="editReport.php" class="nav-link px-3 active">
-                <span class="me-2"> <i class="bi bi-pencil-square"></i> </span>
+                <i class="fa-regular fa-pen-to-square me-2 fa-lg"></i>
                 <span> Edit Report </span>
               </a>
             </li>
             <li>
               <a href="deleteReport.php" class="nav-link px-3 active">
-                <span class="me-2"> <i class="bi bi-x-square"></i> </span>
+                <i class="fa-regular fa-rectangle-xmark me-2 fa-lg"></i>
                 <span> Delete Report </span>
               </a>
             </li>
