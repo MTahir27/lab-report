@@ -15,7 +15,7 @@
     include 'connection.php';
 ?>
 
-<main class="my-5 pt-5">
+<main class="my-5 pt-5 px-lg-4">
     <div class="container-fluid">
        <h2 class="mb-4">Edit Reports</h2>
         <div class="card">
