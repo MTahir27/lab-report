@@ -1,6 +1,14 @@
+@import url("../fonts/roboto/roboto.css");
 :root {
   --offcanvas-width: 270px;
   --topNavbarHeight: 56px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 .sidebar-nav {
