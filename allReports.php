@@ -15,17 +15,13 @@
     include 'connection.php';
 ?>
 
-<main class="mt-5 pt-3">
+<main  class="my-5 pt-4">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 fw-bold fs-3"> View All Reports List </div>
-        </div>
+        <!-- <h2 class="mb-4">View All Reports List</h2> -->
         <div class="card">
-            <div class="card-header fw-bold">
-                ALL Reports Data
-            </div>
-            <div class="card-body">
-                <table class="table">
+        <h5 class="card-header">ALL Reports Data</h5>
+            <div class="card-body table-responsive">
+                <table class="table m-0 table-bordered">
                     <thead>
                         <tr>
                             <th scope="col">ID</th>

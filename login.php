@@ -56,7 +56,7 @@
              </div>';
         }
         if ($showError) {
-            echo'<div class="alert alert-success" role="alert">
+            echo'<div class="alert alert-danger" role="alert">
             <b>Error</b> Wrong Username or Password.
             </div>';
         }
