@@ -16,17 +16,15 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lab Report</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <!-- Font Awesome 6.2.0 -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+      href="./assets/fonts/fontawesome-6.2.0/css/all.min.css"
     />
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- Bootstrap 5.0.2 -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <?php
@@ -45,7 +43,9 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
               <div class="card-body">
                 <h5 class="card-title">All Reports List</h5>
                 <p class="card-text">Check all reports list in this system.</p>
-                <a href="allReports.php" class="btn btn-light">All Reports</a>
+                <a href="./pages/record/allReports.php" class="btn btn-light"
+                  >All Reports</a
+                >
               </div>
             </div>
           </div>
@@ -128,5 +128,9 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
         </section> -->
       </div>
     </main>
+    <!-- JS Files -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js "></script>
+    <script src="./assets/js/custom.js"></script>
   </body>
 </html>

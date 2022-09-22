@@ -4,20 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lab Report | Update Report</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <title>Lab Report</title>
+    <!-- Font Awesome 6.2.0 -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+      href="./assets/fonts/fontawesome-6.2.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Bootstrap 5.0.2 -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-
   <body>
     <?php
     // include 'header.php';
@@ -45,7 +42,7 @@
       >
         <div>
           <img
-            src="images/newlogo.jpg"
+            src="./assets/images/logo/medical-logo.jpg"
             class="img-fluid medical-logo"
             alt="logo"
           />
@@ -108,7 +105,7 @@
             <img
               heigth="150px"
               width="150px"
-              src="images/qr.png"
+              src="./assets/images/qr.png"
               class="img-fluid border"
               alt="QR Code"
             />
@@ -142,11 +139,9 @@
       </section>
     </main>
 
-    <script src="js/script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <!-- JS Files -->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js "></script>
+    <script src="./assets/js/custom.js"></script>
   </body>
 </html>

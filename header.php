@@ -16,6 +16,7 @@ include 'connection.php';
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+
   <body>
     <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
       <div
@@ -60,7 +61,9 @@ include 'connection.php';
                   <?php echo $_SESSION['username'] ?>
                 </a>
               </li>
-              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
               <li><a class="dropdown-item" href="logout.php">Logout</a></li>
             </ul>
           </li>
@@ -119,42 +122,14 @@ include 'connection.php';
                 <span> Delete Report </span>
               </a>
             </li>
-            <!-- <li class="my-4">
-              <hr class="dropdown-divider" />
-            </li> -->
-
-            <!-- <li>
-              <div class="text-muted small fw-bold px-3">SETTING</div>
-            </li>
-            <li>
-              <a href="#" class="nav-link px-3 active">
-                <span class="me-2"> <i class="bi bi-app-indicator"></i> </span>
-                <span> Change Logo </span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link px-3 active">
-                <span class="me-2"> <i class="bi bi-slash-square"></i> </span>
-                <span> Change Signature </span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="nav-link px-3 active">
-                <span class="me-2"> <i class="bi bi-geo-alt"></i> </span>
-                <span> Change Address </span>
-              </a>
-            </li> -->
           </ul>
         </nav>
       </div>
     </div>
     <!--- Sidebar End --->
 
-    <script src="js/script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js "></script>
+    <script src="./assets/js/custom.js"></script>
   </body>
 </html>

@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab Report | Edit Report</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <title>Lab Report</title>
+    <!-- Font Awesome 6.2.0 -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-6.2.0/css/all.min.css">
+    <!-- Bootstrap 5.0.2 -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
@@ -52,7 +56,7 @@
                                     <td>".$result['email']."</td>
                                     <td>".$result['phone']."</td>
                                     <td>".$result['cnic']."</td>
-                                    <td><a class='btn btn-primary' href='updateReport.php?id=$result[id]'> Edit Report</a></td>
+                                    <td class='text-center'><a class='btn btn-secondary' href='updateReport.php?id=$result[id]'> <i class='fa-regular fa-pen-to-square fa-sm me-1'></i> Edit </a></td>
                                 </tr>";
                         }
                     }
@@ -72,5 +76,9 @@
 </main>            
 
 
+<!-- JS Files -->
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js "></script>
+<script src="./assets/js/custom.js"></script>
 </body>
 </html>
