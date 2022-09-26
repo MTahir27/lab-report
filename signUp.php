@@ -40,21 +40,21 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Reister | Lab Report</title>
-    <link  rel="stylesheet" href="./assets/ css/bootstrap.min.css" />
-    <!-- Font Icon -->
-    <link rel="stylesheet" href="formStyling/fonts/material-icon/css/material-design-iconic-font.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab Report</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/formStyle.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-    <!-- Main css -->
-    <link rel="stylesheet" href="./assets/fonts/fontawesome-6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/formStyle.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+  <body>
 
     <div class="container mt-3">
         <?php
@@ -102,5 +102,8 @@
             </div>
         </div>
     </div>
-</body>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js "></script>
+    <script src="./assets/js/custom.js"></script>
+  </body>
 </html>
