@@ -30,77 +30,77 @@
     mysqli_close($link);
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Login | Lab Report</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./assets/css/bootstrap.min.css" />
 
     <!-- Font Icon -->
-    <link rel="stylesheet" href="formStyling/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link
+      rel="stylesheet"
+      href="formStyling/fonts/material-icon/css/material-design-iconic-font.min.css"
+    />
 
     <!-- Main css -->
-    <link rel="stylesheet" href="formStyling/css/style.css">
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/formStyle.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
     <div class="container mt-3">
-    <?php
+      <?php
          if($login){
             echo'<div class="alert alert-success" role="alert">
-            <b>Successfully</b> Logged In
-             </div>';
-        }
-        if ($showError) {
-            echo'<div class="alert alert-danger" role="alert">
-            <b>Error</b> Wrong Username or Password.
-            </div>';
-        }
-        
-    ?>
-        <div class="signin-content">
-            <div class="signin-image">
-                <figure><img src="formStyling/images/signin-image.jpg" alt="sing in image"></figure>
-                <a href="signUp.php" class="signup-image-link">Create an account</a>
-        </div>
-
-        <div class="signin-form">
-            <h2 class="form-title">Login </h2>
-            <form method="POST" class="register-form" id="login-form">
-                <div class="form-group">
-                    <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                    <input type="text" name="name" id="name" placeholder="Your Name"/>
-                </div>
-                <div class="form-group">
-                    <label for="password"><i class="zmdi zmdi-lock"></i></label>
-                    <input type="password" name="password" id="password" placeholder="Password"/>
-                </div>
-                <div class="form-group">
-                    <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
-                    <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
-                </div>
-                <div class="form-group form-button">
-                     <input type="submit" name="submit" id="signin" class="form-submit" value="Log in"/>
-                </div>
-            </form>
-            <div class="social-login">
-                <span class="social-label">Or login with</span>
-                <ul class="socials">
-                    <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-                    <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                    <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
-                </ul>
-            </div>
-        </div>
+      <b>Successfully</b> Logged In
     </div>
-           
+    '; } if ($showError) { echo'
+    <div class="alert alert-danger" role="alert">
+      <b>Error</b> Wrong Username or Password.
+    </div>
+    '; } ?>
+    <div class="signin-content">
+      <div class="signin-image">
+        <figure>
+          <img src="./assets/images/signup.jpg" alt="sing in image" />
+        </figure>
+        <a href="signUp.php" class="signup-image-link">Create an account</a>
+      </div>
 
-    <!-- JS -->
-    <script src="formStyling/vendor/jquery/jquery.min.js"></script>
-    <script src="formStyling/js/main.js"></script>
-</body>
+      <div class="signin-form">
+        <h2 class="form-title">Login</h2>
+        <form method="POST" class="register-form" id="login-form">
+          <div class="form-group">
+            <label for="name"> <i class="fa-solid fa-user"></i></label>
+            <input type="text" name="name" id="name" placeholder="Your Name" />
+          </div>
+          <div class="form-group">
+            <label for="password"><i class="fa-solid fa-lock"></i></label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+
+          <div class="form-group form-button">
+            <input
+              type="submit"
+              name="submit"
+              id="signin"
+              class="form-submit"
+              value="Log in"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

@@ -44,13 +44,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Login | Lab Report</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title> Reister | Lab Report</title>
+    <link  rel="stylesheet" href="./assets/ css/bootstrap.min.css" />
     <!-- Font Icon -->
     <link rel="stylesheet" href="formStyling/fonts/material-icon/css/material-design-iconic-font.min.css">
 
     <!-- Main css -->
-    <link rel="stylesheet" href="formStyling/css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/formStyle.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
@@ -73,39 +75,32 @@
                 <h2 class="form-title">Sign up </h2>
                 <form action="signUp.php" method="POST" class="register-form" id="register-form">
                     <div class="form-group">
-                        <label for="name"><i class="zmdi zmdi-account material-icons-name" ></i></label>
+                        <label for="name"><i class="fa-solid fa-user"></i></label>
                         <input type="text" name="name" id="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email"><i class="zmdi zmdi-email"></i></label>
+                        <label for="email"><i class="fa-solid fa-envelope"></i></label>
                         <input type="email" name="email" id="email" placeholder="Your Email">
                     </div>
                     <div class="form-group">
-                        <label for="password"><i class="zmdi zmdi-lock"></i></label>
+                        <label for="password"><i class="fa-solid fa-lock"></i></label>
                         <input type="password" name="password" id="pass" placeholder="Password" required>
                     </div>
                     <div class="form-group">
-                        <label for="repassword"><i class="zmdi zmdi-lock-outline"></i></label>
+                        <label for="repassword"><i class="fa-solid fa-lock"></i></label>
                         <input type="password" name="repassword" id="repassword" placeholder="Repeat your password" required>
                     </div>
-                    <div class="form-group">
-                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required>
-                        <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
-                    </div>
+                   
                     <div class="form-group form-button">
                         <input type="submit" name="submit" id="signup" class="form-submit" value="Register"/>
                     </div>
                 </form>
             </div>
             <div class="signup-image">
-                <figure><img src="formStyling/images/signup-image.jpg" alt="sing up image"></figure>
+                <figure><img src="./assets/images/signup.jpg" alt="sing up image"></figure>
                 <a href="login.php" class="signup-image-link">I am already member</a>
             </div>
         </div>
     </div>
-
-    <!-- JS -->
-    <script src="formStyling/vendor/jquery/jquery.min.js"></script>
-    <script src="formStyling/js/main.js"></script>
 </body>
 </html>

@@ -9,24 +9,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lab Report</title>
-    <!-- Font Awesome 6.2.0 -->
-    <link
-      rel="stylesheet"
-      href="./assets/fonts/fontawesome-6.2.0/css/all.min.css"
-    />
-    <!-- Bootstrap 5.0.2 -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
+
     <?php
     include 'connection.php';
     include 'header.php';
@@ -43,7 +26,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
               <div class="card-body">
                 <h5 class="card-title">All Reports List</h5>
                 <p class="card-text">Check all reports list in this system.</p>
-                <a href="./pages/record/allReports.php" class="btn btn-light"
+                <a href="./allReports.php" class="btn btn-light"
                   >All Reports</a
                 >
               </div>
@@ -128,9 +111,3 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
         </section> -->
       </div>
     </main>
-    <!-- JS Files -->
-    <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js "></script>
-    <script src="./assets/js/custom.js"></script>
-  </body>
-</html>

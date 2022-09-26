@@ -61,7 +61,7 @@
           <h4 class="text-decoration-underline mb-4">Patient Information</h4>
           <button
             type="button"
-            onclick="window.print()"
+            onclick="printReport()"
             class="btn btn-primary printBtn"
           >
             <i class="fa-solid fa-print me-2"></i>

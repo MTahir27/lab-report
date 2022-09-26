@@ -83,12 +83,12 @@
             <input type="email" class="form-control" name="email" required />
           </div>
           <div class="col-md-6">
-            <label for="phone" class="form-label">Phone Number</label>
+            <label for="phone" class="form-label" >Phone Number</label>
             <input
               type="number"
               class="form-control"
               name="phone"
-              minlength="11"
+              minlength="11" maxlength="11"
               required
             />
           </div>
@@ -107,7 +107,8 @@
               type="number"
               class="form-control"
               name="cnic"
-              minlength="16"
+               minlength="16" 
+               maxlength="16"
               required
             />
           </div>
